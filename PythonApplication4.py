@@ -1,7 +1,7 @@
 ﻿import math
 import tkinter as tk
 from tkinter import ttk
-from turtle import color
+#from turtle import color
 
 class FunctionPlotter:
     def __init__(self, root):
@@ -13,12 +13,11 @@ class FunctionPlotter:
         self.x_min = -10.0
         self.x_max = 10.0
         self.function_var = tk.StringVar(value="sin(x)")
-        
+
+        #"bg": "#a17e50"       "accent": "#374c3c"
         self.colors = {
-            "bg": "#a17e50",
             "control_bg": "#34495e",
             "text": "#ecf0f1",
-            "accent": "#374c3c",
             "graph": "#e74c3c",
             "axes": "#bdc3c7",
             "canvas_bg": "#1a2530",
@@ -225,4 +224,5 @@ def main():
     root.mainloop()
 
 if __name__ == "__main__":
+
     main()
